@@ -34,7 +34,6 @@ public class Register {
           
             count=statement.executeUpdate("insert into student_registration_info(studentID, studentName, department, section, batch, email, userName, password, postion) "
                     + "values('"+studentId+"','"+studentName+"','"+department+"','"+section+"','"+batch+"','"+ email+"','"+userName+"','"+password+"','"+position+"')");
-
         if(count!=0)
         return "success";
         
@@ -42,11 +41,7 @@ public class Register {
         } catch (Exception e) {
            System.out.print("database problem");
         }
-        return "something wrong there" ;
-        
-        
-        
-        
+        return "something wrong there" ;   
 }
 
 }
