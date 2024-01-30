@@ -35,8 +35,6 @@ public class DBconnecton {
              System.out.println("connection class not found");
             Logger.getLogger(DBconnecton.class.getName()).log(Level.SEVERE, null, ex);
         }
-     
-     
      return connection;
     }
     
