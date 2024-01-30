@@ -22,23 +22,18 @@ public class Registration_info {
     public void setStudentName(String studentName) {
         this.studentName = studentName;
     }
-
         public String getStudentName() {
         return studentName;
     }
-
     public String getStudentId() {
         return studentId;
     }
-
     public void setStudentId(String studentId) {
         this.studentId = studentId;
     }
-
     public String getSection() {
         return section;
     }
-
     public void setSection(String section) {
         this.section = section;
     }
@@ -62,11 +57,9 @@ public class Registration_info {
     public String getUserName() {
         return userName;
     }
-
     public void setUserName(String userName) {
         this.userName = userName;
     }
-
     public String getPassword() {
         return password;
     }
@@ -81,8 +74,7 @@ public class Registration_info {
 
     public void setPosition(String position) {
         this.position = position;
-    }
-        
+    }        
     public void setDepartment(String department){
     this.department=department;
     }
