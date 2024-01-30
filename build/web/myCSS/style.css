@@ -1,0 +1,20 @@
+
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      background:#02182D;
+      font-size:35px;
+      padding: 20px;
+    }
+    
+   .row.content {height: 750px}
+    
+    
+    li a{
+    display: inline-block;
+    color: white;
+    text-align:center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-left: 250px;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<html>
+<head>
+  <title> Home Page </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <style>
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      background:#02182D;
+      font-size:20px;
+      padding:5px;
+    }
+    .row.content {height: 750px}
+    
+    
+    li a{
+    display: inline-block;
+    color: white;
+    text-align:center;
+    padding: 5px 5px;
+    text-decoration: none;
+    margin-left: 20px;
+}
+div a{
+    overflow: hidden;
+}
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+        <img height="50px" width="50px" src="myCSS/diu.png">
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+         
+          <li><a href="student_info_edit.jsp"> <img class="img-circle" height="30px" width="40px" src="myCSS/user.jpg"><b> <%= session.getAttribute("userid") %></b></a></li>
+          <li><a href="student_success_log.jsp"><img class="img-circle"height="30px" width="4px" src="myCSS/back.jpg"><b>Home</b></a></li>
+          <li><a href="student_complaint_form.jsp"><img class="img-circle" height="30px" width="4px" src="myCSS/back.jpg"><b>Complaint</b></a></li>
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+          <li> <a href="Logout.jsp"><b>Logout</b></a>
+    
+       </li>
+      </ul>
+  </div>
+</div>
+
+      
+ </nav>
+  
+</body>
+</html>
