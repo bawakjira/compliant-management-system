@@ -3,7 +3,6 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Servlet.java to edit this template
  */
 package ServeletController;
-
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletConfig;
 import java.io.IOException;
@@ -31,7 +30,6 @@ public class Admin_Accounts_Complaints_Controller extends HttpServlet {
   throws ServletException{
     this.config=config;
  }
-
   public void doGet(HttpServletRequest request, HttpServletResponse response)
     throws ServletException,IOException
 {
@@ -39,17 +37,13 @@ public class Admin_Accounts_Complaints_Controller extends HttpServlet {
   Statement statement=null;
   ResultSet rs;
   List dataList=new ArrayList(); 
-  
-  try {
-      
+  try {      
   String sql = "select * from student_complaints where complaintsType = 'accounts'" ;
   connection=DBconnecton.creatConnection();
   statement=connection.createStatement();
   statement.executeQuery (sql);
   rs = statement.getResultSet();
-  
-  while (rs.next ()){
-      
+  while (rs.next ()){    
   dataList.add(rs.getString("sid"));
   dataList.add(rs.getString("studentId"));
   dataList.add(rs.getString("studentName"));
@@ -57,26 +51,16 @@ public class Admin_Accounts_Complaints_Controller extends HttpServlet {
   dataList.add(rs.getString("complaintsType"));
   dataList.add(rs.getString("comment"));
   dataList.add(rs.getString("date"));
-  
-  
-  
   }
-
   rs.close ();
   statement.close ();
-
   }catch(Exception e){
   System.out.println("Exception is ;"+e);
-
   }
-
   request.setAttribute("data",dataList);
   RequestDispatcher dispatcher = request.getRequestDispatcher(page);
    if (dispatcher != null){
   dispatcher.forward(request, response);
-
    } 
-
   }
-
 } 
