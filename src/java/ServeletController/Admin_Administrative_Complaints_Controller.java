@@ -3,7 +3,6 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Servlet.java to edit this template
  */
 package ServeletController;
-
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletConfig;
 import java.io.IOException;
@@ -31,7 +30,6 @@ public class Admin_Administrative_Complaints_Controller extends HttpServlet {
   throws ServletException{
     this.config=config;
  }
-
   public void doGet(HttpServletRequest request, HttpServletResponse response)
     throws ServletException,IOException
 {
